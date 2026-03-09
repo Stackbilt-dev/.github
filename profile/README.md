@@ -1,6 +1,6 @@
-# Stackbilt
-
-Edge-native product studio. We build, operate, and ship production AI systems and developer tools — and open-source the infrastructure worth sharing.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Stackbilt-dev/.github/main/profile/banner.png" alt="Stackbilt — Edge-Native Product Studio" width="600" />
+</p>
 
 ---
 
