@@ -1,56 +1,58 @@
 # Stackbilt
 
-API-first product studio. We build, operate, and ship vertical software products — and open-source the infrastructure worth sharing.
+Edge-native product studio. We build, operate, and ship production AI systems and developer tools — and open-source the infrastructure worth sharing.
 
 ---
 
 ## What we do
 
-Stackbilt is a solo-founder software studio focused on production systems that actually run. No pitch decks, no vaporware. Products ship on edge-first architecture (Cloudflare Workers, D1, KV, R2) with TypeScript end to end.
+Stackbilt is a solo-founder software studio building production systems on Cloudflare's edge platform. TypeScript end to end, serverless everywhere, AI-native by default. No pitch decks, no vaporware — everything listed here is deployed and running.
 
-Current focus areas: AI developer tooling, structured data APIs, and governance tooling for AI-assisted development.
+## Platform
+
+All products run on a shared platform backbone:
+
+- **[stackbilt-auth](https://auth.stackbilt.dev)** — Consolidated auth service. Multi-tenant, Stripe billing (4 tiers), GitHub/Google SSO, unified credit pools, 16 RPCs. Every product authenticates through a single Service Binding.
+- **[MCP Gateway](https://mcp.stackbilt.dev)** — OAuth 2.1 (PKCE) protected remote MCP server gateway. Third-party MCP client access to Stackbilt services.
+- **Observability Pipeline** — Event-driven usage tracking, cost reporting, tool analytics, and generation metrics via Cloudflare Queues.
+
+## Products
+
+| Product | What it does | Status |
+|---|---|---|
+| **[AEGIS](https://aegis.stackbilt.dev)** | Persistent autonomous AI agent — hybrid vector memory, 8-tier cost model, full SDLC pipeline (GitHub issue → merged PR), cross-repo intelligence, MCP server (20 tools) | **Live** |
+| **[Stackbilder](https://stackbilt.dev)** | AI architecture engine for full-stack edge applications | **Live** |
+| **[img-forge](https://imgforge.stackbilt.dev)** | Multi-model image generation API (FLUX.2, Stable Diffusion, Gemini) with OAuth 2.1 MCP server | **Live** |
+| **[FoodFiles](https://foodfiles.stackbilt.dev)** | Structured food data API | Active |
+| **TarotScript** | Symbolic computation language for deterministic tarot analysis | Active |
 
 ## Open Source
 
 ### [Charter](https://github.com/Stackbilt-dev/charter)
 
-Local-first governance toolkit for LLM-assisted development. Charter gives teams a structured way to define decision boundaries, context rules, and behavioral constraints for AI agents — without locking into any single provider.
+AI Developer Framework (ADF) for agent context management. Gives teams a structured way to define decision boundaries, context rules, and behavioral constraints for AI agents — provider-agnostic.
 
 - Apache-2.0 licensed
 - ADF context compiler (format, bundle, patch, evidence, migrate)
 - CLI: `@stackbilt/cli`
-- Works with any LLM provider
-
-Charter is the public expression of how we think about AI governance: practical constraints that ship with your codebase, not policy documents that collect dust.
-
-## Products
-
-We operate several products under the **"Product by Stackbilt"** model. Most are currently private repos in active development.
-
-| Product | What it does | Status |
-|---|---|---|
-| **EdgeStack** | AI-powered developer platform | Active (private) |
-| **img-forge** | MCP-native text-to-image API | Pre-launch (private) |
-| **FoodFiles** | Structured food data API | Active (private) |
-| **TarotAPI** | Tarot reading API | Active (private) |
 
 ## Stack
 
-We default to edge-first unless there's a good reason not to:
+Edge-first unless there's a good reason not to:
 
-- **Runtime:** Cloudflare Workers
-- **Language:** TypeScript everywhere
+- **Runtime:** Cloudflare Workers (V8 isolates)
+- **Language:** TypeScript
 - **APIs:** Hono
-- **Storage:** D1, KV, R2
-- **AI:** Multi-provider with failover (never single-vendor lock-in)
+- **Storage:** D1, KV, R2, Vectorize
+- **AI:** Multi-model orchestration across 8 cost tiers (Claude, Groq, Workers AI, OpenAI-compatible)
+- **Auth:** OAuth 2.1 (PKCE), consolidated RPC surface
+- **Billing:** Stripe with weighted credit pools
 
 ## Contributing
 
-Charter is our primary open-source project and welcomes contributions under the [DCO](https://developercertificate.org/) (sign-off your commits). See the [Charter contributing guide](https://github.com/Stackbilt-dev/charter/blob/main/CONTRIBUTING.md) for details.
-
-For everything else, we're a small operation. If you're interested in what we're building, the best way to follow along is to watch this org or star the repos that interest you.
+Charter is our primary open-source project and welcomes contributions under the [DCO](https://developercertificate.org/). See the [Charter contributing guide](https://github.com/Stackbilt-dev/charter/blob/main/CONTRIBUTING.md).
 
 ## Contact
 
-- GitHub: [@Stackbilt-dev](https://github.com/Stackbilt-dev)
 - Web: [stackbilt.dev](https://stackbilt.dev)
+- GitHub: [@Stackbilt-dev](https://github.com/Stackbilt-dev)
