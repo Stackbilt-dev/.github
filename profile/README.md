@@ -21,7 +21,6 @@ Stackbilt is a solo-founder + AI co-founder studio building production systems o
 | **[AEGIS](https://aegis.stackbilt.dev/health)** | Persistent AI agent framework — multi-tier memory, autonomous goals, dreaming cycle, 26 scheduled tasks, runtime dynamic tools, MCP server. [Open source.](https://github.com/Stackbilt-dev/aegis-oss) | **Live** |
 | **[img-forge](https://imgforge.stackbilt.dev)** | AI image generation API — 5 quality tiers, SDXL/FLUX/Gemini models, REST API + MCP server | **Live** |
 | **[Stackbilder](https://stackbilt.dev)** | Architecture scaffolding via MCP. Describe your app, get deployable Cloudflare Worker code | **Live** |
-| **[FoodFiles](https://foodfiles.stackbilt.dev)** | Structured food data API | Active |
 | **TarotScript** | Symbolic computation engine — deterministic classification, zero inference cost | Active |
 
 ## Platform
