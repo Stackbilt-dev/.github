@@ -12,7 +12,7 @@
 
 ## What we do
 
-Stackbilt is a solo-founder + AI co-founder studio building production systems on Cloudflare's edge platform. TypeScript end to end, serverless everywhere, AI-native by default. No pitch decks, no vaporware — everything listed here is deployed and running. Total infrastructure cost: $0/month (Workers free tier + Workers AI for inference).
+Stackbilt is a solo-founder + AI co-founder studio building production systems on Cloudflare's edge platform. TypeScript end to end, serverless everywhere, AI-native by default. No pitch decks, no vaporware — everything listed here is deployed and running. Total infrastructure cost: $~25/month (Workers free tier + Workers AI for inference).
 
 ## Products
 
